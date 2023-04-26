@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <div class="media g-mb-30 media-comment">
+        <div class="media-body u-shadow-v18 g-bg-secondary g-pa-30">
+          <div class = "g-mb-15">
+            <form class='bottom-margin-2'>
+              <div class="from-group">
+                <h4 class="h4 g-color-gray-dark-v1 mb-4">Cargar review</h4>
+              </div>
+              <input type="file" class="form-control" id="customFile" (change)="onChange($event)"/>
+            </form>
+            <button class="btn btn-secondary" (click)="getPrediction()">Publicar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 mx-auto">
+      <div class="media g-mb-30 media-comment">
+        <div class="media-body u-shadow-v18 g-bg-secondary g-pa-30">
+          <div class = "g-mb-15">
+            <form>
+              <div class="from-group">
+                <h4 class="h4 g-color-gray-dark-v1 mb-4">Resultado</h4>
+              </div>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Review</th>
+                    <th scope="col">Sentimiento</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let review of reviews; index as i">
+                    <th scope="row">{{ i + 1 }}</th>
+                    <td>{{ review.review_es }}</td>
+                    <td>{{ review.sentimiento }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="margin-bottom-10"></div>

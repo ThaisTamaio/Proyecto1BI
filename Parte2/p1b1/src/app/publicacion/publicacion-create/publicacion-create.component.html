@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <div class="media g-mb-30 media-comment">
+        <div class="media-body u-shadow-v18 g-bg-secondary g-pa-30">
+          <div class = "g-mb-15">
+            <form>
+              <div class="from-group">
+                <h4 class="h4 g-color-gray-dark-v1 mb-4">Publicar review</h4>
+              </div>
+              <div class="form-group mb-4">
+                <textarea class="form-control" style="height: 200px;" placeholder="Escribe tus pensamientos" rows="3" #textAreaInput></textarea>
+              </div>
+
+            </form>
+            <button class="btn btn-secondary" (click)="getPrediction(textAreaInput.value)">Publicar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
