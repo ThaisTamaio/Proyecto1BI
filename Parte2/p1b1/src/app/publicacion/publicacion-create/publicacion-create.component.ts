@@ -58,7 +58,7 @@ export class PublicacionCreateComponent implements OnInit {
       this.reviews.push(review);
       this.publicacionService.setReviews(this.reviews);
       this.spinner.hide();
-      if (review.sentimiento == 'positivo'){
+      if (review.sentimiento == 'Positivo'){
         this.openSnackBar("El sentimiento de la publicación es positivo", "Cerrar")
       }else{
         this.openSnackBar("El sentimiento de la publicación es negativo", "Cerrar")
