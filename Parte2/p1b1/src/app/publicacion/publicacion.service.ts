@@ -3,13 +3,14 @@ import { HttpClient } from '@angular/common/http';
 
 import { Publicacion, Review } from './publicacion';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PublicacionService {
 
-  private apiUrl: string = 'http://localhost:8000/';
+  private apiUrl: string = environment.baseUrl;
   private reviews: Review[] = [];
 
   constructor(private http: HttpClient) { }
