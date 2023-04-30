@@ -1,2 +1,4 @@
 python-multipart
 fastapi
+num2words
+langdetect
